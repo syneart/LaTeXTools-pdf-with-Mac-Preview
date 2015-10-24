@@ -1,6 +1,6 @@
 # LatexTools-pdf-with-Mac-Preview
 
-show LatexTools pdf with Mac Preview App
+show LatexTools pdf with Mac Preview App, so you don't need install skim
 
 
 only use in OS X (Mac OS)
