@@ -32,6 +32,11 @@ else
     exit 1
 fi
 
+tmpfile_path=/tmp/ltp$RANDOM
+tr -d '\r' < "${jumpToPDF_File}" > "${tmpfile_path}"
+cp "${tmpfile_path}" "${jumpToPDF_File}"
+rm "${tmpfile_path}"
+
 if [[ $exp == "keep" ]]; then
     echo "Info: 設定排程中 ..."
     mkdir /Users/$USER/Library/SyAShell
