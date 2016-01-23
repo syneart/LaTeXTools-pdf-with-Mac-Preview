@@ -41,7 +41,7 @@ if [[ $exp == "keep" ]]; then
     echo "Info: 設定排程中 ..."
     mkdir /Users/$USER/Library/SyAShell
 if [ -z "`launchctl list | grep com.syneart.LaTeXTools_pdf_with_Mac_Preview`" ]; then
-cat >> /Users/$USER/Library/LaunchAgents/com.syneart.LaTeXTools_pdf_with_Mac_Preview.plist <<EOF
+cat > /Users/$USER/Library/LaunchAgents/com.syneart.LaTeXTools_pdf_with_Mac_Preview.plist <<EOF
     <?xml version="1.0" encoding="UTF-8"?>
     <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
     <plist version="1.0">
