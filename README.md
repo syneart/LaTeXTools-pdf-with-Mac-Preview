@@ -11,7 +11,7 @@ $ bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh
 
 ## Advanced
 
-Now, we can add "--keep" parameter to Long-term implementation this script, add "--unkeep" parameter to Disable.
+Now, we can add "<code>--keep</code>" parameter to Long-term implementation this script, add "<code>--unkeep</code>" parameter to Disable.
 
 Like this bwlow.
 
