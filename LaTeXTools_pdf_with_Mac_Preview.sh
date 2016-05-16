@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright 2015 by SyneArt <sa@syneart.com>
+# Copyright by SyneArt <sa@syneart.com>
 clear
 
 OS=`uname -s`
@@ -21,11 +21,10 @@ esac
 echo "Info: Check file Now .."
 jumpToPDF_File=`find ~/ -name jumpToPDF.py 2>/dev/null | tail -n 1`
 if [ $? -eq 0 ]; then
-    if grep -q '"Preview"' "${jumpToPDF_File}" ; then
+    if grep -q "'preview'" "${jumpToPDF_File}" ; then
         echo "Info: 檔案已修改過, 無需再次修改"
     else
-        sed -i '' "/if plat == 'darwin':/a\ "$'\n>.^\t\t\tsubprocess.Popen(["open", "-a", "Preview"] + [pdffile])\n' "${jumpToPDF_File}"
-        sed -i '' 's/>.^//g' "${jumpToPDF_File}"
+        sed -i '' "s/'osx': 'skim',/'osx': 'preview',/" "${jumpToPDF_File}"
     fi
 else
     echo "Error: 失敗, 您有安裝 LaTeXTools 了嗎？"
