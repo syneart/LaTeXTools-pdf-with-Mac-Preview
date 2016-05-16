@@ -21,7 +21,7 @@ $ <code>bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh --keep</code>
 
 We must unkeep the old version script, and keep latest version script.
 
-Like this bwlow.
+Download the latest version script first and do like this bwlow.
 
 $ <code>bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh --unkeep</code>
 
