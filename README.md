@@ -7,7 +7,7 @@ Only use in _**OS X (Mac OS)**_
 
 Use the Terminal , and type like below to execute (change directory to bash file location)
 
-$ bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh
+$ <code>bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh</code>
 
 ## Advanced
 
@@ -15,8 +15,19 @@ Now, we can add "<code>--keep</code>" parameter to Long-term implementation this
 
 Like this bwlow.
 
-$ bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh --keep
+$ <code>bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh --keep</code>
 
+## Update-script (When we use "<code>--keep</code>" parameter before)
+
+We must unkeep the old version script, and keep latest version script.
+
+Like this bwlow.
+
+$ <code>bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh --unkeep</code>
+
+and
+
+$ <code>bash ~/Downloads/LaTeXTools_pdf_with_Mac_Preview.sh --keep</code>
 
 ## License
 
